@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="설정 적용" android:key="Apply" android:summary="타일은 활성화 순서에 따라 정렬됩니다 (처음 활성화한 타일이 먼저 배치됩니다)" />
+    <PreferenceCategory android:title="기타 옵션" android:key="TileColumns">
+        <CheckBoxPreference android:title="3 열" android:key="QSM_TILES_COLUMNS" android:defaultValue="false" android:summaryOn="3 열" android:summaryOff="4 열" />
+        <CheckBoxPreference android:title="설정 패널 자동 표시" android:key="QSM_AUTO_DEFAULT" android:summary="아무런 알림이 존재하지 않을 때 자동으로 설정 패널을 표시" android:defaultValue="true" />
+        <CheckBoxPreference android:title="설정 패널 가장자리 열기" android:key="QSM_EDGE_TRIGGER" android:summary="화면 오른쪽 가장자리를 당겨서 설정 패널을 표시" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="활성화 토글" android:key="EnabledToggles">
+        <CheckBoxPreference android:title="설정" android:key="QSM_SETTINGS" android:defaultValue="true" />
+        <CheckBoxPreference android:title="밝기" android:key="QSM_BRIGHTNESS" android:defaultValue="true" />
+        <CheckBoxPreference android:title="벨소리 모드" android:key="QSM_RINGER" android:defaultValue="true" />
+        <CheckBoxPreference android:title="밝기 및 볼륨 조절바" android:key="QSM_SEEKBAR" android:defaultValue="true" />
+        <CheckBoxPreference android:title="배터리" android:key="QSM_BATTERY" android:defaultValue="true" />
+        <CheckBoxPreference android:title="회전 잠금" android:key="QSM_ROTATION" android:defaultValue="true" />
+        <CheckBoxPreference android:title="비행기 모드" android:key="QSM_AIRPLANE" android:defaultValue="true" />
+        <CheckBoxPreference android:title="WiFi" android:key="QSM_WIFI" android:defaultValue="true" />
+        <CheckBoxPreference android:title="모바일 데이터" android:key="QSM_DATA" android:defaultValue="true" />
+        <CheckBoxPreference android:title="블루투스" android:key="QSM_BT" android:defaultValue="true" />
+        <CheckBoxPreference android:title="GPS" android:key="QSM_LOCATION" android:defaultValue="true" />
+        <CheckBoxPreference android:title="화면 끄기" android:key="QSM_SCREEN" android:defaultValue="true" />
+        <CheckBoxPreference android:title="Wifi AP" android:key="QSM_WIFI_AP" android:defaultValue="true" />
+        <CheckBoxPreference android:title="손전등" android:key="QSM_TORCH" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="임시 타일" android:key="TemporaryTiles">
+        <CheckBoxPreference android:title="알람" android:key="QSM_ALARM" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>
